@@ -1,0 +1,18 @@
+{
+  "name": "@toppleside/tools",
+  "version": "1.0.0",
+  "description": "Global developer tools and sync utilities for Toppleside projects",
+  "bin": {
+    "topple-sync": "./dist/topple-sync.js"
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "prepack": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.9",
+    "typescript": "=5.5.3"
+  }
+}
